@@ -8,22 +8,22 @@ import { headerPlugin } from './headerMdPlugin'
 
 const nav: ThemeConfig['nav'] = [
   {
-    text: 'Docs',
+    text: 'Dokumen',
     activeMatch: `^/(guide|style-guide|cookbook|examples)/`,
     items: [
-      { text: 'Guide', link: '/guide/introduction' },
+      { text: 'Panduan', link: '/guide/introduction' },
       { text: 'Tutorial', link: '/tutorial/' },
-      { text: 'Examples', link: '/examples/' },
-      { text: 'Quick Start', link: '/guide/quick-start' },
+      { text: 'Contoh', link: '/examples/' },
+      { text: 'Mulai Cepat', link: '/guide/quick-start' },
       // { text: 'Style Guide', link: '/style-guide/' },
-      { text: 'Glossary', link: '/glossary/' },
-      { text: 'Error Reference', link: '/error-reference/' },
+      { text: 'Glosarium', link: '/glossary/' },
+      { text: 'Referensi Error', link: '/error-reference/' },
       {
-        text: 'Vue 2 Docs',
+        text: 'Dokumentasi Vue 2',
         link: 'https://v2.vuejs.org'
       },
       {
-        text: 'Migration from Vue 2',
+        text: 'Migrasi dari Vue 2',
         link: 'https://v3-migration.vuejs.org/'
       }
     ]
@@ -38,25 +38,25 @@ const nav: ThemeConfig['nav'] = [
     link: 'https://play.vuejs.org'
   },
   {
-    text: 'Ecosystem',
+    text: 'Ekosistem',
     activeMatch: `^/ecosystem/`,
     items: [
       {
-        text: 'Resources',
+        text: 'Sumber Daya',
         items: [
-          { text: 'Partners', link: '/partners/' },
-          { text: 'Themes', link: '/ecosystem/themes' },
-          { text: 'UI Components', link: 'https://ui-libs.vercel.app/' },
+          { text: 'Mitra', link: '/partners/' },
+          { text: 'Tema', link: '/ecosystem/themes' },
+          { text: 'Komponen UI', link: 'https://ui-libs.vercel.app/' },
           {
-            text: 'Certification',
+            text: 'Sertifikasi',
             link: 'https://certificates.dev/vuejs/?ref=vuejs-nav'
           },
-          { text: 'Jobs', link: 'https://vuejobs.com/?ref=vuejs' },
-          { text: 'T-Shirt Shop', link: 'https://vue.threadless.com/' }
+          { text: 'Lowongan Kerja', link: 'https://vuejobs.com/?ref=vuejs' },
+          { text: 'Toko Kaos', link: 'https://vue.threadless.com/' }
         ]
       },
       {
-        text: 'Official Libraries',
+        text: 'Perpustakaan Resmi',
         items: [
           { text: 'Vue Router', link: 'https://router.vuejs.org/' },
           { text: 'Pinia', link: 'https://pinia.vuejs.org/' },
@@ -64,7 +64,7 @@ const nav: ThemeConfig['nav'] = [
         ]
       },
       {
-        text: 'Video Courses',
+        text: 'Video Kursus',
         items: [
           {
             text: 'Vue Mastery',
@@ -77,7 +77,7 @@ const nav: ThemeConfig['nav'] = [
         ]
       },
       {
-        text: 'Help',
+        text: 'Bantuan',
         items: [
           {
             text: 'Discord Chat',
@@ -91,31 +91,31 @@ const nav: ThemeConfig['nav'] = [
         ]
       },
       {
-        text: 'News',
+        text: 'Berita',
         items: [
           { text: 'Blog', link: 'https://blog.vuejs.org/' },
           { text: 'Twitter', link: 'https://twitter.com/vuejs' },
-          { text: 'Events', link: 'https://events.vuejs.org/' },
-          { text: 'Newsletters', link: '/ecosystem/newsletters' }
+          { text: 'Acara', link: 'https://events.vuejs.org/' },
+          { text: 'Buletin', link: '/ecosystem/newsletters' }
         ]
       }
     ]
   },
   {
-    text: 'About',
+    text: 'Tentang',
     activeMatch: `^/about/`,
     items: [
-      { text: 'FAQ', link: '/about/faq' },
-      { text: 'Team', link: '/about/team' },
-      { text: 'Releases', link: '/about/releases' },
+      { text: 'Pertanyaan', link: '/about/faq' },
+      { text: 'Tim', link: '/about/team' },
+      { text: 'Rilis', link: '/about/releases' },
       {
-        text: 'Community Guide',
+        text: 'Panduan Komunitas',
         link: '/about/community-guide'
       },
-      { text: 'Code of Conduct', link: '/about/coc' },
-      { text: 'Privacy Policy', link: '/about/privacy' },
+      { text: 'Kode Etik', link: '/about/coc' },
+      { text: 'Kebijakan Privasi', link: '/about/privacy' },
       {
-        text: 'The Documentary',
+        text: 'Dokumenter',
         link: 'https://www.youtube.com/watch?v=OrxmtDw4pVI'
       }
     ]
@@ -125,7 +125,7 @@ const nav: ThemeConfig['nav'] = [
     link: '/sponsor/'
   },
   {
-    text: 'Partners',
+    text: 'Mitra',
     link: '/partners/',
     activeMatch: `^/partners/`
   }
@@ -717,7 +717,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       },
       {
         link: '/translations/',
-        text: 'Help Us Translate!',
+        text: 'Bantu Kami Menerjemahkan!',
         isTranslationsDesc: true
       }
     ],
@@ -744,7 +744,7 @@ export default defineConfigWithTheme<ThemeConfig>({
 
     editLink: {
       repo: 'vuejs/docs',
-      text: 'Edit this page on GitHub'
+      text: 'Edit halaman ini di GitHub'
     },
 
     footer: {
