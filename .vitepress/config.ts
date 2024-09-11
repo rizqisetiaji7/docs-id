@@ -562,8 +562,16 @@ export const sidebar: ThemeConfig['sidebar'] = {
 }
 
 // Placeholder of the i18n config for @vuejs-translations.
-// const i18n: ThemeConfig['i18n'] = {
-// }
+const i18n: ThemeConfig['i18n'] = {
+  search: 'Pencarian',
+  menu: 'Menu',
+  toc: 'Daftar isi',
+  returnToTop: 'Kembali ke atas',
+  appearance: 'Tampilan',
+  previous: 'Sebelumnya',
+  next: 'Selanjutnya',
+  pageNotFound: 'Halaman tidak ditemukan'
+}
 
 export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig,
@@ -644,7 +652,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     nav,
     sidebar,
     // Placeholder of the i18n config for @vuejs-translations.
-    // i18n,
+    i18n,
 
     localeLinks: [
       {
