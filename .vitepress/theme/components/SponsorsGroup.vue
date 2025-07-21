@@ -93,7 +93,7 @@ function resolveList(data: SponsorData) {
       href="/sponsor/"
       class="spsr-item action"
       @click="track(true)"
-      >Menjadi Sponsor</a
+      >Jadi Sponsor</a
     >
     <a
       v-if="tier === 'special' && data && !data[tier]?.length"

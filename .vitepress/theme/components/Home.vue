@@ -13,12 +13,10 @@ onMounted(load)
   <section id="hero">
     <img id="uwu" alt="Vue.js Kawaii Logo by @icarusgkx" />
     <h1 class="tagline">
-      Kerangka Kerja 
-      <br />JavaScript <span class="accent">Progresif</span>
+      Kerangka Kerja JavaScript Nan <span class="accent">Progresif</span>
     </h1>
     <p class="description">
-      An approachable, performant and versatile framework for building web
-      user interfaces.
+      Kerangka kerja yang mudah dipahami, berkinerja, dan serbaguna untuk membangun web antarmuka pengguna.
     </p>
     <p class="actions">
       <VueMasteryModal />
@@ -85,41 +83,30 @@ onMounted(load)
 
   <section id="highlights" class="vt-box-container">
     <div class="vt-box">
-      <h2>Approachable</h2>
+      <h2>Mudah Dipahami</h2>
       <p>
-        <!-- Builds on top of standard HTML, CSS and JavaScript with intuitive
-        API and world-class documentation. -->
         Dibangun diatas standar HTML, CSS, dan JavaScript dengan 
         API intuitif dan dokumentasi kelas dunia.
       </p>
     </div>
     <div class="vt-box">
-      <!-- <h2>Performant</h2> -->
-      <h2>Performa tinggi</h2>
+      <h2>Berkinerja</h2>
       <p>
-        <!-- Truly reactive, compiler-optimized rendering system that rarely
-        requires manual optimization. -->
-        Sistem rendering yang benar-benar reaktif, dioptimalkan untuk kompiler, 
-        dan jarang memerlukan optimasi manual.
+        Sistem rendering yang benar-benar reaktif, dioptimalkan untuk kompiler tanpa optimasi manual.
       </p>
     </div>
     <div class="vt-box">
-      <!-- <h2>Versatile</h2> -->
       <h2>Serbaguna</h2>
       <p>
-        <!-- A rich, incrementally adoptable ecosystem that scales between a
-        library and a full-featured framework. -->
-        Sangat kaya, ekosistem dapat diadopsi bertahap yang berskala
+        Kaya ekosistem yang dapat diadopsi bertahap, berskala
         antara pustaka dan kerangka kerja berfitur lengkap.
       </p>
     </div>
   </section>
 
   <section id="spsrs">
-    <!-- <h2>Platinum Sponsors</h2> -->
     <h2>Sponsor Platinum</h2>
     <SponsorsGroup tier="platinum" placement="landing" />
-    <!-- <h2>Gold Sponsors</h2> -->
     <h2>Sponsor Emas</h2>
     <SponsorsGroup tier="gold" placement="landing" />
   </section>
