@@ -1,6 +1,6 @@
 ---
 page: true
-title: Vue.js - Kerangka Kerja JavaScript Progresif
+title: Vue.js - Kerangka Kerja JavaScript Nan Progresif
 ---
 
 <script setup>
