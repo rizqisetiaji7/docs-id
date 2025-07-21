@@ -10,22 +10,22 @@ import { groupIconMdPlugin,groupIconVitePlugin } from 'vitepress-plugin-group-ic
 
 const nav: ThemeConfig['nav'] = [
   {
-    text: 'Docs',
+    text: 'Dokumentasi',
     activeMatch: `^/(guide|style-guide|cookbook|examples)/`,
     items: [
-      { text: 'Guide', link: '/guide/introduction' },
+      { text: 'Panduan', link: '/guide/introduction' },
       { text: 'Tutorial', link: '/tutorial/' },
-      { text: 'Examples', link: '/examples/' },
-      { text: 'Quick Start', link: '/guide/quick-start' },
+      { text: 'Contoh', link: '/examples/' },
+      { text: 'Mulai Cepat', link: '/guide/quick-start' },
       // { text: 'Style Guide', link: '/style-guide/' },
-      { text: 'Glossary', link: '/glossary/' },
-      { text: 'Error Reference', link: '/error-reference/' },
+      { text: 'Glosarium', link: '/glossary/' },
+      { text: 'Referensi Error', link: '/error-reference/' },
       {
-        text: 'Vue 2 Docs',
+        text: 'Dokumentasi Vue 2',
         link: 'https://v2.vuejs.org'
       },
       {
-        text: 'Migration from Vue 2',
+        text: 'Migrasi dari Vue 2',
         link: 'https://v3-migration.vuejs.org/'
       }
     ]
@@ -40,34 +40,34 @@ const nav: ThemeConfig['nav'] = [
     link: 'https://play.vuejs.org'
   },
   {
-    text: 'Ecosystem',
+    text: 'Ekosistem',
     activeMatch: `^/ecosystem/`,
     items: [
       {
-        text: 'Resources',
+        text: 'Sumber Daya',
         items: [
-          { text: 'Partners', link: '/partners/' },
-          { text: 'Developers', link: '/developers/' },
-          { text: 'Themes', link: '/ecosystem/themes' },
-          { text: 'UI Components', link: 'https://ui-libs.vercel.app/' },
+          { text: 'Mitra', link: '/partners/' },
+          { text: 'Pengembang', link: '/developers/' },
+          { text: 'Tema', link: '/ecosystem/themes' },
+          { text: 'Komponen UI', link: 'https://ui-libs.vercel.app/' },
           {
-            text: 'Certification',
+            text: 'Sertifikasi',
             link: 'https://certificates.dev/vuejs/?ref=vuejs-nav'
           },
-          { text: 'Jobs', link: 'https://vuejobs.com/?ref=vuejs' },
-          { text: 'T-Shirt Shop', link: 'https://vue.threadless.com/' }
+          { text: 'Lowongan Kerja', link: 'https://vuejobs.com/?ref=vuejs' },
+          { text: 'Toko Kaos', link: 'https://vue.threadless.com/' }
         ]
       },
       {
-        text: 'Official Libraries',
+        text: 'Pustaka Resmi',
         items: [
           { text: 'Vue Router', link: 'https://router.vuejs.org/' },
           { text: 'Pinia', link: 'https://pinia.vuejs.org/' },
-          { text: 'Tooling Guide', link: '/guide/scaling-up/tooling.html' }
+          { text: 'Alat Panduan', link: '/guide/scaling-up/tooling.html' }
         ]
       },
       {
-        text: 'Video Courses',
+        text: 'Video Kursus',
         items: [
           {
             text: 'Vue Mastery',
@@ -80,45 +80,45 @@ const nav: ThemeConfig['nav'] = [
         ]
       },
       {
-        text: 'Help',
+        text: 'Bantuan',
         items: [
           {
-            text: 'Discord Chat',
+            text: 'Obrolan Discord',
             link: 'https://discord.com/invite/HBherRA'
           },
           {
-            text: 'GitHub Discussions',
+            text: 'Diskusi GitHub',
             link: 'https://github.com/vuejs/core/discussions'
           },
-          { text: 'DEV Community', link: 'https://dev.to/t/vue' }
+          { text: 'Komunitas DEV', link: 'https://dev.to/t/vue' }
         ]
       },
       {
-        text: 'News',
+        text: 'Berita',
         items: [
           { text: 'Blog', link: 'https://blog.vuejs.org/' },
           { text: 'Twitter', link: 'https://twitter.com/vuejs' },
-          { text: 'Events', link: 'https://events.vuejs.org/' },
-          { text: 'Newsletters', link: '/ecosystem/newsletters' }
+          { text: 'Acara', link: 'https://events.vuejs.org/' },
+          { text: 'Buletin', link: '/ecosystem/newsletters' }
         ]
       }
     ]
   },
   {
-    text: 'About',
+    text: 'Tentang',
     activeMatch: `^/about/`,
     items: [
       { text: 'FAQ', link: '/about/faq' },
-      { text: 'Team', link: '/about/team' },
-      { text: 'Releases', link: '/about/releases' },
+      { text: 'Tim', link: '/about/team' },
+      { text: 'Rilis', link: '/about/releases' },
       {
-        text: 'Community Guide',
+        text: 'Panduan Komunitas',
         link: '/about/community-guide'
       },
-      { text: 'Code of Conduct', link: '/about/coc' },
-      { text: 'Privacy Policy', link: '/about/privacy' },
+      { text: 'Kode Etik', link: '/about/coc' },
+      { text: 'Kebijakan Privasi', link: '/about/privacy' },
       {
-        text: 'The Documentary',
+        text: 'Dokumenter',
         link: 'https://www.youtube.com/watch?v=OrxmtDw4pVI'
       }
     ]
@@ -128,12 +128,12 @@ const nav: ThemeConfig['nav'] = [
     link: '/sponsor/'
   },
   {
-    text: 'Experts',
-    badge: { text: 'NEW' },
+    text: 'Ahli',
+    badge: { text: 'BARU' },
     activeMatch: `^/(partners|developers)/`,
     items: [
-      { text: 'Partners', link: '/partners/' },
-      { text: 'Developers', link: '/developers/', badge: { text: 'NEW' } }
+      { text: 'Mitra', link: '/partners/' },
+      { text: 'Pengembang', link: '/developers/', badge: { text: 'BARU' } }
     ]
   }
 ]
@@ -141,11 +141,11 @@ const nav: ThemeConfig['nav'] = [
 export const sidebar: ThemeConfig['sidebar'] = {
   '/guide/': [
     {
-      text: 'Getting Started',
+      text: 'Memulai',
       items: [
-        { text: 'Introduction', link: '/guide/introduction' },
+        { text: 'Pendahuluan', link: '/guide/introduction' },
         {
-          text: 'Quick Start',
+          text: 'Mulai Cepat',
           link: '/guide/quick-start'
         }
       ]
@@ -715,7 +715,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       },
       {
         link: '/translations/',
-        text: 'Help Us Translate!',
+        text: 'Bantu Menerjemahkan!',
         isTranslationsDesc: true
       }
     ],
@@ -742,7 +742,7 @@ export default defineConfigWithTheme<ThemeConfig>({
 
     editLink: {
       repo: 'vuejs/docs',
-      text: 'Edit this page on GitHub'
+      text: 'Edit halaman ini di GitHub'
     },
 
     footer: {
@@ -805,9 +805,9 @@ export default defineConfigWithTheme<ThemeConfig>({
         customLLMsTxtTemplate: `\
 # Vue.js
 
-Vue.js - The Progressive JavaScript Framework
+Vue.js - Kerangka Kerja JavaScript Nan Progresif
 
-## Table of Contents
+## Daftar Isi
 
 {toc}`
       }) as Plugin,
