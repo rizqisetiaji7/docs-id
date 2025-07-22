@@ -6,29 +6,29 @@ footer: false
 import { VTCodeGroup, VTCodeGroupTab } from '@vue/theme'
 </script>
 
-# Quick Start {#quick-start}
+# Mulai Cepat {#quick-start}
 
-## Try Vue Online {#try-vue-online}
+## Coba Vue Online {#try-vue-online}
 
-- To quickly get a taste of Vue, you can try it directly in our [Playground](https://play.vuejs.org/#eNo9jcEKwjAMhl/lt5fpQYfXUQfefAMvvRQbddC1pUuHUPrudg4HIcmXjyRZXEM4zYlEJ+T0iEPgXjn6BB8Zhp46WUZWDjCa9f6w9kAkTtH9CRinV4fmRtZ63H20Ztesqiylphqy3R5UYBqD1UyVAPk+9zkvV1CKbCv9poMLiTEfR2/IXpSoXomqZLtti/IFwVtA9A==).
+- Untuk segera mencoba Vue, Anda bisa mencoba langsung di [_Playground_](https://play.vuejs.org/#eNo9jcEKwjAMhl/lt5fpQYfXUQfefAMvvRQbddC1pUuHUPrudg4HIcmXjyRZXEM4zYlEJ+T0iEPgXjn6BB8Zhp46WUZWDjCa9f6w9kAkTtH9CRinV4fmRtZ63H20Ztesqiylphqy3R5UYBqD1UyVAPk+9zkvV1CKbCv9poMLiTEfR2/IXpSoXomqZLtti/IFwVtA9A==) kami.
 
-- If you prefer a plain HTML setup without any build steps, you can use this [JSFiddle](https://jsfiddle.net/yyx990803/2ke1ab0z/) as your starting point.
+- Jika Anda lebih suka _setup_ HTML biasa tanpa langkah pembuatan apa pun, Anda dapat menggunakan [JSFiddle](https://jsfiddle.net/yyx990803/2ke1ab0z/) ini sebagai permulaan.
 
-- If you are already familiar with Node.js and the concept of build tools, you can also try a complete build setup right within your browser on [StackBlitz](https://vite.new/vue).
+- Jika Anda sudah familiar dengan Node.js, dan konsep _build tools_, Anda juga dapat mencoba _build setup_ lengkap secara langsung pada browser Anda di [StackBlitz](https://vite.new/vue).
 
-- To get a walkthrough of the recommended setup, watch this interactive [Scrimba](http://scrimba.com/links/vue-quickstart) tutorial that shows you how to run, edit, and deploy your first Vue app.
+- Untuk mendapatkan panduan _setup_ yang direkomendasikan, tonton tutorial interaktif [Scrimba](http://scrimba.com/links/vue-quickstart) yang akan menunjukkan kepada Anda cara menjalankan, mengedit, dan men-_deploy_ aplikasi Vue pertama Anda.
 
-## Creating a Vue Application {#creating-a-vue-application}
+## Membuat Aplikasi Vue {#creating-a-vue-application}
 
-:::tip Prerequisites
+:::tip Prasyarat
 
-- Familiarity with the command line
-- Install [Node.js](https://nodejs.org/) version 18.3 or higher
+- Familiar dengan _command line_
+- Instal [Node.js](https://nodejs.org/) versi 18.3 atau lebih tinggi
   :::
 
-In this section we will introduce how to scaffold a Vue [Single Page Application](/guide/extras/ways-of-using-vue#single-page-application-spa) on your local machine. The created project will be using a build setup based on [Vite](https://vitejs.dev) and allow us to use Vue [Single-File Components](/guide/scaling-up/sfc) (SFCs).
+Di bagian ini kami akan memperkenalkan cara membuat Vue [Single-Page Application](/guide/extras/ways-of-using-vue#single-page-application-spa) di komputer lokal Anda. Proyek yang dibuat akan menggunakan _build setup_ berbasis [Vite](https://vitejs.dev), dan memungkinkan kita menggunakan Vue [Single-File Components](/guide/scaling-up/sfc) (SFCs).
 
-Make sure you have an up-to-date version of [Node.js](https://nodejs.org/) installed and your current working directory is the one where you intend to create a project. Run the following command in your command line (without the `$` sign):
+Pastikan Anda telah menginstal versi [Node.js](https://nodejs.org/) terbaru dan direktori Anda saat ini adalah tempat yang diperuntukkan membuat proyek. Jalankan perintah berikut pada _command line_ Anda (tanpa tanda `$`):
 
 ::: code-group
 
@@ -41,13 +41,13 @@ $ pnpm create vue@latest
 ```
 
 ```sh [yarn]
-# For Yarn (v1+)
+# Untuk Yarn (v1+)
 $ yarn create vue
 
-# For Yarn Modern (v2+)
+# Untuk Yarn Modern (v2+)
 $ yarn create vue@latest
   
-# For Yarn ^v4.11
+# Untuk Yarn ^v4.11
 $ yarn dlx create-vue@latest
 ```
 
@@ -56,7 +56,7 @@ $ bun create vue@latest
 ```
 :::
 
-This command will install and execute [create-vue](https://github.com/vuejs/create-vue), the official Vue project scaffolding tool. You will be presented with prompts for several optional features such as TypeScript and testing support:
+Perintah ini akan menginstal dan menjalankan [create-vue](https://github.com/vuejs/create-vue), _scaffolding tool_ resmi Vue. Anda akan diberikan petunjuk untuk beberapa pilihan fitur seperti TypeScript dan dukungan pengujian:
 
 <div class="language-sh"><pre><code><span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Project name: <span style="color:#888;">… <span style="color:#89DDFF;">&lt;</span><span style="color:#888;">your-project-name</span><span style="color:#89DDFF;">&gt;</span></span></span>
 <span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add TypeScript? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
@@ -72,7 +72,7 @@ This command will install and execute [create-vue](https://github.com/vuejs/crea
 <span style="color:#A6ACCD;">Scaffolding project in ./<span style="color:#89DDFF;">&lt;</span><span style="color:#888;">your-project-name</span><span style="color:#89DDFF;">&gt;</span>...</span>
 <span style="color:#A6ACCD;">Done.</span></code></pre></div>
 
-If you are unsure about an option, simply choose `No` by hitting enter for now. Once the project is created, follow the instructions to install dependencies and start the dev server:
+Jika Anda tidak yakin mengenai suatu pilihan, cukup pilih `No` dengan menekan _enter_ untuk saat ini. Setelah proyek dibuat, ikuti petunjuk untuk menginstal dependensi dan menjalankan _dev server_:
 
 ::: code-group
 
@@ -103,14 +103,14 @@ $ bun run dev
 :::
 
 
-You should now have your first Vue project running! Note that the example components in the generated project are written using the [Composition API](/guide/introduction#composition-api) and `<script setup>`, rather than the [Options API](/guide/introduction#options-api). Here are some additional tips:
+Anda sekarang seharusnya sudah menjalankan proyek Vue pertama Anda! Perhatikan bahwa contoh komponen dalam proyek yang dihasilkan, ditulis menggunakan [Composition API](/guide/introduction#composition-api) dan `<script setup>`, daripada [Options API](/guide/introduction#options-api). Berikut beberapa tips tambahan:
 
-- The recommended IDE setup is [Visual Studio Code](https://code.visualstudio.com/) + [Vue - Official extension](https://marketplace.visualstudio.com/items?itemName=Vue.volar). If you use other editors, check out the [IDE support section](/guide/scaling-up/tooling#ide-support).
-- More tooling details, including integration with backend frameworks, are discussed in the [Tooling Guide](/guide/scaling-up/tooling).
-- To learn more about the underlying build tool Vite, check out the [Vite docs](https://vitejs.dev).
-- If you choose to use TypeScript, check out the [TypeScript Usage Guide](typescript/overview).
+- _Setup_ IDE yang direkomendasikan adalah [Visual Studio Code](https://code.visualstudio.com/) + [Vue - Official extension](https://marketplace.visualstudio.com/items?itemName=Vue.volar). Jika Anda menggunakan editor lain, silahkan lihat [bagian dukungan IDE](/guide/scaling-up/tooling#ide-support).
+- Detail _tooling_ lebih lanjut, termasuk integrasi dengan kerangka kerja _backend_, dibahas dalam [Panduan Tooling](/guide/scaling-up/tooling).
+- Untuk mempelajari lebih lanjut tentang _build tool_ yang mendasari Vite, silahkan lihat [dokumentasi Vite](https://vitejs.dev).
+- Jika Anda memilih untuk menggunakan TypeScript, silahkan lihat [Panduan Penggunaan TypeScript](typescript/overview).
 
-When you are ready to ship your app to production, run the following:
+Saat Anda siap menjalankan aplikasi ke _production_, jalankan perintah berikut: 
 
 ::: code-group
 
@@ -133,25 +133,25 @@ $ bun run build
 :::
 
 
-This will create a production-ready build of your app in the project's `./dist` directory. Check out the [Production Deployment Guide](/guide/best-practices/production-deployment) to learn more about shipping your app to production.
+Ini akan membuat versi aplikasi Anda yang siap produksi di proyek direktori `./dist`. Lihat [Panduan _Production Deployment_](/guide/best-practices/production-deployment) untuk mempelajari lebih lanjut tentang pengiriman aplikasi Anda ke _production_.
 
-[Next Steps >](#next-steps)
+[Langkah Selanjutnya >](#next-steps)
 
-## Using Vue from CDN {#using-vue-from-cdn}
+## Menggunakan Vue CDN {#using-vue-from-cdn}
 
-You can use Vue directly from a CDN via a script tag:
+Anda bisa menggunakan Vue langsung dari CDN melalui tag _script_:
 
 ```html
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 ```
 
-Here we are using [unpkg](https://unpkg.com/), but you can also use any CDN that serves npm packages, for example [jsdelivr](https://www.jsdelivr.com/package/npm/vue) or [cdnjs](https://cdnjs.com/libraries/vue). Of course, you can also download this file and serve it yourself.
+Di sini kita menggunakan [unpkg](https://unpkg.com/), namun Anda juga bisa menggunakan CDN manapun yang menyediakan paket npm, misalnya [jsdelivr](https://www.jsdelivr.com/package/npm/vue) atau [cdnjs](https://cdnjs.com/libraries/vue). Tentu saja, Anda juga bisa mengunduh file tersebut dan menjalankannya sendiri.
 
-When using Vue from a CDN, there is no "build step" involved. This makes the setup a lot simpler, and is suitable for enhancing static HTML or integrating with a backend framework. However, you won't be able to use the Single-File Component (SFC) syntax.
+Ketika menggunakan Vue dari CDN, disana tidak ada "build step" yang dijalankan. Hal ini membuat _setup_ menjadi jauh lebih mudah, dan cocok untuk meningkatkan HTML statis atau mengintegrasikan dengan kerangka kerja _backend_. Namun, Anda tidak akan bisa menggunakan sintaks _Single-File Component_ (SFC).
 
-### Using the Global Build {#using-the-global-build}
+### Menggunakan Global Build {#using-the-global-build}
 
-The above link loads the _global build_ of Vue, where all top-level APIs are exposed as properties on the global `Vue` object. Here is a full example using the global build:
+Tautan di atas memuat _global build_ Vue, di mana semua _top-level APIs_ diekspos sebagai properti pada global objek `Vue`. Berikut adalah contoh lengkap menggunakan _global build_:
 
 <div class="options-api">
 
@@ -173,7 +173,7 @@ The above link loads the _global build_ of Vue, where all top-level APIs are exp
 </script>
 ```
 
-[CodePen Demo >](https://codepen.io/vuejs-examples/pen/QWJwJLp)
+[Demo CodePen >](https://codepen.io/vuejs-examples/pen/QWJwJLp)
 
 </div>
 
@@ -198,17 +198,17 @@ The above link loads the _global build_ of Vue, where all top-level APIs are exp
 </script>
 ```
 
-[CodePen Demo >](https://codepen.io/vuejs-examples/pen/eYQpQEG)
+[Demo CodePen >](https://codepen.io/vuejs-examples/pen/eYQpQEG)
 
 :::tip
-Many of the examples for Composition API throughout the guide will be using the `<script setup>` syntax, which requires build tools. If you intend to use Composition API without a build step, consult the usage of the [`setup()` option](/api/composition-api-setup).
+Banyak contoh untuk _Composition API_ di seluruh panduan ini akan menggunakan sintaks `<script setup>`, yang membutuhkan _build tools_. Jika Anda bermaksud menggunakan _Composition API_ tanpa langkah _build_, konsultasikan penggunaan [opsi `setup()`](/api/composition-api-setup).
 :::
 
 </div>
 
-### Using the ES Module Build {#using-the-es-module-build}
+### Menggunakan _ES Module Build_ {#using-the-es-module-build}
 
-Throughout the rest of the documentation, we will be primarily using [ES modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) syntax. Most modern browsers now support ES modules natively, so we can use Vue from a CDN via native ES modules like this:
+Di sepanjang sisa dokumentasi, kita akan mengutamakan penggunaan sintaks [_ES Module_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules). Sebagian besar browser modern saat ini mendukung _ES Module_ secara native, jadi kita bisa menggunakan Vue dari CDN melalui _ES Module_ secara native seperti ini: 
 
 <div class="options-api">
 
@@ -251,28 +251,28 @@ Throughout the rest of the documentation, we will be primarily using [ES modules
 
 </div>
 
-Notice that we are using `<script type="module">`, and the imported CDN URL is pointing to the **ES modules build** of Vue instead.
+Perhatikan bahwa kita menggunakan `<script type="module">`, dan URL CDN yang diimpor mengarah ke **ES modules build** Vue.
 
 <div class="options-api">
 
-[CodePen Demo >](https://codepen.io/vuejs-examples/pen/VwVYVZO)
+[Demo CodePen >](https://codepen.io/vuejs-examples/pen/VwVYVZO)
 
 </div>
 <div class="composition-api">
 
-[CodePen Demo >](https://codepen.io/vuejs-examples/pen/MWzazEv)
+[Demo CodePen >](https://codepen.io/vuejs-examples/pen/MWzazEv)
 
 </div>
 
-### Enabling Import maps {#enabling-import-maps}
+### Mengaktifkan _Import Maps_ {#enabling-import-maps}
 
-In the above example, we are importing from the full CDN URL, but in the rest of the documentation you will see code like this:
+Pada contoh diatas, kita mengimpor dari URL CDN secara lengkap, tetapi di sisa dokumentasi Anda akan melihat kode seperti ini:
 
 ```js
 import { createApp } from 'vue'
 ```
 
-We can teach the browser where to locate the `vue` import by using [Import Maps](https://caniuse.com/import-maps):
+Kita dapat memberitahu browser di mana menempatkan impor `vue` dengan menggunakan [Import Maps](https://caniuse.com/import-maps):
 
 <div class="options-api">
 
@@ -300,7 +300,7 @@ We can teach the browser where to locate the `vue` import by using [Import Maps]
 </script>
 ```
 
-[CodePen Demo >](https://codepen.io/vuejs-examples/pen/wvQKQyM)
+[Demo CodePen >](https://codepen.io/vuejs-examples/pen/wvQKQyM)
 
 </div>
 
@@ -331,20 +331,20 @@ We can teach the browser where to locate the `vue` import by using [Import Maps]
 </script>
 ```
 
-[CodePen Demo >](https://codepen.io/vuejs-examples/pen/YzRyRYM)
+[Demo CodePen >](https://codepen.io/vuejs-examples/pen/YzRyRYM)
 
 </div>
 
-You can also add entries for other dependencies to the import map - but make sure they point to the ES modules version of the library you intend to use.
+Anda juga dapat menambahkan entri untuk dependensi lain ke _import map_ - namun pastikan mereka menuju ke versi _ES modules_ dari pustaka yang ingin Anda gunakan.
 
-:::tip Import Maps Browser Support
-Import Maps is a relatively new browser feature. Make sure to use a browser within its [support range](https://caniuse.com/import-maps). In particular, it is only supported in Safari 16.4+.
+:::tip Dukungan Browser _Import Maps_
+_Import Maps_ adalah fitur browser yang relatif baru. Pastikan untuk menggunakan browser dalam [jangkauan dukungan](https://caniuse.com/import-maps). Secara khusus, ini hanya didukung di Safari 16.4+.
 :::
 
-:::warning Notes on Production Use
-The examples so far are using the development build of Vue - if you intend to use Vue from a CDN in production, make sure to check out the [Production Deployment Guide](/guide/best-practices/production-deployment#without-build-tools).
+:::warning Catatan pada penggunaan _Production_
+Contoh sejauh ini menggunakan versi _development_ dari Vue - jika Anda berniat menggunakan Vue dari CDN dalam _production_, pastikan untuk memeriksa [Panduan _Production Deployment_](/guide/best-practices/production-deployment#without-build-tools). 
 
-While it is possible to use Vue without a build system, an alternative approach to consider is using [`vuejs/petite-vue`](https://github.com/vuejs/petite-vue) that could better suit the context where [`jquery/jquery`](https://github.com/jquery/jquery) (in the past) or [`alpinejs/alpine`](https://github.com/alpinejs/alpine) (in the present) might be used instead.
+Meskipun memungkinkan untuk menggunakan Vue tanpa sistem _build_, pendekatan alternatif yang dapat dipertimbangkan adalah menggunakan [`vuejs/petite-vue`](https://github.com/vuejs/petite-vue) yang lebih sesuai dengan konteks di mana [`jquery/jquery`](https://github.com/jquery/jquery) (di masa lalu) atau [`alpinejs/alpine`](https://github.com/alpinejs/alpine) (di masa sekarang) mungkin digunakan sebagai gantinya.
 :::
 
 ### Splitting Up the Modules {#splitting-up-the-modules}
