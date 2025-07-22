@@ -347,9 +347,9 @@ Contoh sejauh ini menggunakan versi _development_ dari Vue - jika Anda berniat m
 Meskipun memungkinkan untuk menggunakan Vue tanpa sistem _build_, pendekatan alternatif yang dapat dipertimbangkan adalah menggunakan [`vuejs/petite-vue`](https://github.com/vuejs/petite-vue) yang lebih sesuai dengan konteks di mana [`jquery/jquery`](https://github.com/jquery/jquery) (di masa lalu) atau [`alpinejs/alpine`](https://github.com/alpinejs/alpine) (di masa sekarang) mungkin digunakan sebagai gantinya.
 :::
 
-### Splitting Up the Modules {#splitting-up-the-modules}
+### Membagi Modul {#splitting-up-the-modules}
 
-As we dive deeper into the guide, we may need to split our code into separate JavaScript files so that they are easier to manage. For example:
+Saat kita menyelami lebih dalam panduan ini, kita mungkin perlu membagi kode menjadi file JavaScript terpisah sehingga lebih mudah dikelola. Misalnya: 
 
 ```html [index.html]
 <div id="app"></div>
@@ -389,29 +389,29 @@ export default {
 
 </div>
 
-If you directly open the above `index.html` in your browser, you will find that it throws an error because ES modules cannot work over the `file://` protocol, which is the protocol the browser uses when you open a local file.
+Jika Anda langsung membuka `index.html` di atas pada browser, Anda akan menemukan bahwa itu menimbulkan error karena _ES modules_ tidak dapat bekerja melalui protokol `file://`, yang merupakan protokol yang digunakan browser saat Anda membuka file lokal.
 
-Due to security reasons, ES modules can only work over the `http://` protocol, which is what the browsers use when opening pages on the web. In order for ES modules to work on our local machine, we need to serve the `index.html` over the `http://` protocol, with a local HTTP server.
+Karena alasan keamanan, _ES modules_ hanya bisa bekerja diatas protokol `http://`, yang digunakan browser saat membuka halaman di web. Agar modul ES dapat bekerja pada mesin lokal, kita perlu menyajikan `index.html` melalui protokol `http://`, dengan server HTTP lokal.
 
-To start a local HTTP server, first make sure you have [Node.js](https://nodejs.org/en/) installed, then run `npx serve` from the command line in the same directory where your HTML file is. You can also use any other HTTP server that can serve static files with the correct MIME types.
+Untuk menjalankan server HTTP lokal, pertama pastikan Anda telah menginstal [Node.js](https://nodejs.org/en/), kemudian jalankan perintah `npx serve` melalui _command line_ di direktori yang sama dengan tempat file HTML Anda berada. Anda juga dapat menggunakan server HTTP lain yang dapat menyajikan file statis dengan tipe MIME yang benar.
 
-You may have noticed that the imported component's template is inlined as a JavaScript string. If you are using VS Code, you can install the [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html) extension and prefix the strings with a `/*html*/` comment to get syntax highlighting for them.
+Anda mungkin telah memperhatikan bahwa templat komponen yang diimpor disisipkan sebagai string JavaScript. Jika Anda menggunakan VS Code, Anda dapat menginstal ekstensi [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html) dan awali string dengan komentar `/*html*/` untuk mendapatkan _highlight_ sintaks pada string tersebut.
 
-## Next Steps {#next-steps}
+## Langkah Selanjutnya {#next-steps}
 
-If you skipped the [Introduction](/guide/introduction), we strongly recommend reading it before moving on to the rest of the documentation.
+Jika Anda melewatkan [Pendahuluan](/guide/introduction), kami sangat menyarankan untuk membacanya sebelum melanjutkan ke dokumentasi lainnya.
 
 <div class="vt-box-container next-steps">
   <a class="vt-box" href="/guide/essentials/application.html">
-    <p class="next-steps-link">Continue with the Guide</p>
-    <p class="next-steps-caption">The guide walks you through every aspect of the framework in full detail.</p>
+    <p class="next-steps-link">Lanjutkan dengan Panduan</p>
+    <p class="next-steps-caption">Panduan ini memandu Anda melalui setiap aspek kerangka kerja secara detail.</p>
   </a>
   <a class="vt-box" href="/tutorial/">
-    <p class="next-steps-link">Try the Tutorial</p>
-    <p class="next-steps-caption">For those who prefer learning things hands-on.</p>
+    <p class="next-steps-link">Coba Tutorialnya</p>
+    <p class="next-steps-caption">Bagi mereka yang lebih suka belajar secara langsung.</p>
   </a>
   <a class="vt-box" href="/examples/">
-    <p class="next-steps-link">Check out the Examples</p>
-    <p class="next-steps-caption">Explore examples of core features and common UI tasks.</p>
+    <p class="next-steps-link">Lihat Contohnya</p>
+    <p class="next-steps-caption">Jelajahi contoh fitur inti dan <i>tasks UI</i> umum.</p>
   </a>
 </div>
